@@ -1,50 +1,44 @@
-<h1 align="center">MERN Real-Time Chat Application</h1>
+# MERN Real-Time Chat Application
 
-<p align="center">
-A full-stack real-time chat application built using the MERN stack, featuring secure authentication,
-real-time messaging, notifications, and a modern responsive UI.
-</p>
+A full-stack real-time chat application built using the MERN stack (MongoDB, Express.js, React, Node.js).  
+The application enables secure authentication and instant messaging between users using WebSockets (Socket.IO) with persistent chat history stored in MongoDB.
 
 ---
 
-## 🚀 Project Overview
-
-This project demonstrates a **production-level real-time chat system** built with modern
-full-stack technologies. It focuses on **secure authentication, scalable APIs, and
-real-time communication**, making it suitable for showcasing backend and frontend skills
-in technical interviews.
+## 🔗 Live Demo
+https://mern-chatapp-prod-iw5r.onrender.com/
 
 ---
-## Live Application: https://mern-chatapp-prod-iw5r.onrender.com/
 
-## ✨ Key Features
+## 🧩 Features
 
-### 🔐 Authentication & Security
-- Custom **JWT-based authentication** (no third-party auth providers)
-- Secure protected routes and APIs
-- API rate-limiting using Arcjet
+### Authentication
+- User registration and login
+- JWT-based authentication
+- Protected API routes
 
-### 💬 Real-Time Communication
-- Real-time messaging with **Socket.io**
-- Online / offline presence indicators
-- Typing indicators and message notifications
+### Real-Time Messaging
+- Instant messaging using Socket.IO (WebSockets)
+- Online / offline user status
+- Typing indicators
 
-### 📨 Notifications & Media
-- Automated **welcome emails** on signup (Resend)
-- Image uploads and media handling via **Cloudinary**
+### Chat Functionality
+- One-to-one private conversations
+- Persistent chat history (MongoDB)
+- Message timestamps
 
-### 🧰 Backend & APIs
-- RESTful API built with **Node.js & Express**
-- **MongoDB** for persistent data storage
-- Scalable backend architecture
+### Media Sharing
+- Send images/files
+- Cloudinary media storage integration
 
-### 🎨 Frontend & UI
-- Modern UI built with **React**, **Tailwind CSS**, and **DaisyUI**
-- State management using **Zustand**
-- Responsive and user-friendly design
+### User Interface
+- Responsive UI (mobile + desktop)
+- Built using React, Tailwind CSS and DaisyUI
+- Global state management using Zustand
 
 ---
-## 🛠️ Tech Stack
+
+## 🛠 Tech Stack
 
 **Frontend**
 - React
@@ -55,56 +49,107 @@ in technical interviews.
 **Backend**
 - Node.js
 - Express.js
-- MongoDB
-- Socket.io
+- Socket.IO
 
-**Other Tools & Services**
-- Cloudinary (Media storage)
-- Resend (Email service)
-- Arcjet (Rate limiting & security)
+**Database**
+- MongoDB (MongoDB Atlas)
+
+**Services & Tools**
+- Cloudinary – media storage  
+- Resend – email service  
+- Arcjet – API rate limiting & security
 
 ---
 
-## 🧪 .env Setup
+## 📁 Project Structure
 
-### Backend (`/backend`)
-
-```bash
-PORT=3000
-MONGO_URI=your_mongo_uri_here
-
-NODE_ENV=development
-
-JWT_SECRET=your_jwt_secret
-
-RESEND_API_KEY=your_resend_api_key
-EMAIL_FROM=your_email_from_address
-EMAIL_FROM_NAME=your_email_from_name
-
-CLIENT_URL=http://localhost:5173
-
-CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-
-ARCJET_KEY=your_arcjet_key
-ARCJET_ENV=development
+```
+fullstack-realtime-chat-app
+│
+├── frontend        # React client
+├── backend         # Express + Socket.IO server
+└── screenshots     # Application UI images
 ```
 
 ---
 
-## 🔧 Run the Backend
+## ⚙️ Local Setup Instructions
 
-```bash
+### 1️⃣ Clone Repository
+```
+git clone https://github.com/prem05012005/fullstack-realtime-chat-app
+cd fullstack-realtime-chat-app
+```
+
+---
+
+### 2️⃣ Backend Setup
+```
 cd backend
 npm install
 npm run dev
 ```
 
-## 💻 Run the Frontend
+Create a `.env` file inside the `backend` folder:
 
-```bash
+```
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+```
+
+---
+
+### 3️⃣ Frontend Setup
+```
 cd frontend
 npm install
 npm run dev
 ```
+
+Frontend runs on:
+```
+http://localhost:5173
+```
+
+---
+
+## 📸 Application Screenshots
+
+### Register Page
+![Register](screenshots/register.png)
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Contacts / Users List
+![Contacts](screenshots/contacts.png)
+
+### Start Conversation
+![Start Chat](screenshots/startchat.png)
+
+### Real-Time Messaging
+![Message](screenshots/message.png)
+
+### Media Sharing
+![Image Message](screenshots/image-message.png)
+
+---
+
+## 🚀 Key Concepts Demonstrated
+- REST API development
+- JWT Authentication
+- WebSocket communication
+- Real-time event handling
+- Database persistence
+- Frontend state management
+
+---
+
+## 👤 Author
+**Premkumar Vusthulamuri**  
+GitHub: https://github.com/prem05012005
