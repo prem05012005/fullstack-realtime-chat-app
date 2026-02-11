@@ -129,16 +129,18 @@ http://localhost:5173
 ### Contacts / Users List
 ![Contacts](screenshots/contacts.png)
 
-### Start Conversation
-![Start Chat](screenshots/startchat.png)
+### Chat Window
+![Chat](screenshots/chat.png)
 
-### Real-Time Messaging
-![Message](screenshots/message.png)
+### Chat Contacts Sidebar
+![Chat Contacts](screenshots/chat_contacts.png)
 
-### Media Sharing
-![Image Message](screenshots/image-message.png)
+### Chat Suggestions
+![Chat Suggestions](screenshots/chat_suggestions.png)
 
----
+### Image Sharing
+![Image Message](screenshots/chat_image.png)
+
 
 ## 🚀 Key Concepts Demonstrated
 - REST API development
