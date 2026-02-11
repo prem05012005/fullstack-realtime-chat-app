@@ -15,6 +15,7 @@ real-time communication**, making it suitable for showcasing backend and fronten
 in technical interviews.
 
 ---
+## Live Application: https://mern-chatapp-prod-iw5r.onrender.com/
 
 ## ✨ Key Features
 
